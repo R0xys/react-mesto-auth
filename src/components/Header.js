@@ -1,7 +1,10 @@
-function Header() {
+import { Link } from "react-router-dom"
+
+function Header({ children }) {
   return (
   <header className="header">
-    <a href="#" className="header__logo"></a> 
+    <Link to="/" className="header__logo" replace></Link> 
+    {children}
   </header>
   )
 }

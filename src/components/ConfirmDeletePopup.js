@@ -5,7 +5,7 @@ function ConfirmDeletePopup(props) {
     props.onConfirm(props.card);
   }
   return (
-    <section className={`popup confirm-popup ${props.isOpen && "popup_opened"}`} id="confirm-popup">
+    <section className={`popup ${props.isOpen && "popup_opened"}`} id="confirm-popup">
       <div className="popup__container">
         <button onClick={props.onClose} className="popup__close-button zero-button" id="confirm-popup-close-button" type="button"></button>
           <h2 className="popup__title popup__confirm-title">Вы уверены?</h2>
